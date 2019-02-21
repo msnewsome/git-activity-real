@@ -14,8 +14,8 @@
   <tbody>
     <% @catalogs.each do |catalog| %>
       <tr>
-        <td><%= catalog.vendor %></td>
-        <td><%= catalog.product %></td>
+        <td><%= catalog.vendor.name %></td>
+        <td><%= catalog.product.name %></td>
         <td><%= link_to 'Show', catalog %></td>
         <td><%= link_to 'Edit', edit_catalog_path(catalog) %></td>
         <td><%= link_to 'Destroy', catalog, method: :delete, data: { confirm: 'Are you sure?' } %></td>

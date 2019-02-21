@@ -2,12 +2,12 @@
 
 <p>
   <strong>Vendor:</strong>
-  <%= @catalog.vendor %>
+  <%= @catalog.vendor.name %>
 </p>
 
 <p>
   <strong>Product:</strong>
-  <%= @catalog.product %>
+  <%= @catalog.product.name %>
 </p>
 
 <%= link_to 'Edit', edit_catalog_path(@catalog) %> |
