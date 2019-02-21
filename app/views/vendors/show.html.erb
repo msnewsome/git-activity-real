@@ -5,14 +5,23 @@
   <%= @vendor.name %>
 </p>
 
+<%= @vendor.products.each do |product| %>
 <p>
-  <%= @vendor.products.each do |product| %>
-
+  <strong>Product: </strong>
+  <tr>
       <td><%= product.name %></td>
-
-<% end %>
+    <br>
+  </tr>
+</p>
+<p>
+  <strong>Price: </strong>
+  <tr>
+    <td><%= product.price %></td>
+    <br>
+  </tr>
 
 </p>
+<% end %>
 
 
 <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
